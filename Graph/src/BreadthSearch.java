@@ -33,8 +33,6 @@ public class BreadthSearch {
 
         this.queue.add(e);
 
-        // showColorsSteps();
-
         while (!this.queue.isEmpty()) {
             for (int i = 0; i < this.graph.size(); i++) {
                 if (this.graph.get(i) == queue.element()) {
@@ -50,7 +48,7 @@ public class BreadthSearch {
                 } else {
                     System.out.println("Pulando o visitado: " + queue.element().get(i));
                 }
-                // showColorsSteps();
+
             }
 
             for (int i = 0; i < graph.size(); i++) {
@@ -59,7 +57,7 @@ public class BreadthSearch {
                     color[i] = black;
                 }
             }
-            // showColorsSteps();
+
             queue.remove();
         }
 

@@ -10,10 +10,9 @@ public class Main {
         Graph g = new Graph("Graph/src/pequenoG.txt");
         g.printListAdj();   // Printa as informações referente ao grafo dado o txt acima
 
-        // Atividade 3 - BFS - Busca em Largura
+     
 
-        BreadthSearch bfs = new BreadthSearch(g);
-        bfs.startBFS(0);  // Insere o número do vértice de início
+        BreadthSearch bfs = new BreadthSearch(g);      
 
 
         // Atividade 3 - Imprimi o menor caminho dado 2 vértices

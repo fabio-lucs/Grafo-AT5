@@ -69,30 +69,6 @@ public class Graph {
 
     }
 
-    private void getDegree_for_Each_Vertex() {
-        for (int i = 0; i < this.listAdj.size(); i++) {
-            int countDegree = 0;
-            System.out.print("vertex degree [ " + i + " ] - ");
-            for (int j = 0; j < listAdj.get(i).size(); j++) {
-                countDegree++;
-
-            }
-            if (countDegree == 0) {
-                this.number_of_isolated_vertex++;
-            }
-            if (countDegree == 1) {
-                this.number_of_end_vertex++;
-            }
-            System.out.print(countDegree);
-            System.out.println();
-            System.out.println("---------------------------");
-
-        }
-        System.out.println("Número de vértices isolados " + this.getNumber_of_isolated_vertex());
-        System.out.println("Número de vértices de extremidade: " + this.getNumber_of_end_vertex());
-        System.out.println("---------------------------");
-    }
-
     void printListAdj() {
 
         System.out.println();
@@ -110,7 +86,6 @@ public class Graph {
         }
 
         System.out.println("---------------------------");
-        getDegree_for_Each_Vertex();
     }
 
     // Methods to Read and tranform str in int
